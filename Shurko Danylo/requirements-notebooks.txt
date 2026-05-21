@@ -1,0 +1,36 @@
+# Основні пакети для обробки даних
+pandas
+pyarrow
+numpy
+
+# Парсинг HTML
+beautifulsoup4
+lxml
+
+# AWS SDK (для Lambda і локальної взаємодії)
+boto3
+s3fs
+
+# Embedding-моделі для семантичної дедуплікації
+sentence-transformers
+torch
+
+# LLM-екстракція скілів
+transformers
+accelerate
+bitsandbytes  # для 4-bit квантизації якщо потрібно
+
+# Регресія та статистика
+statsmodels
+scikit-learn
+scipy
+
+# Візуалізація
+matplotlib
+seaborn
+
+# Jupyter
+jupyter
+ipykernel
+nbformat
+nbconvert
