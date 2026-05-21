@@ -1,0 +1,1239 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5280355464724943 0.5771486051875356 0.622959026896293 2.1062135992226456
+  position 4.108791527543741 -2.0343155456137505 34.075494601502655
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 15 15
+  floorAppearance PBRAppearance {
+    baseColor 0.3 0.75 0.35
+    roughness 0.8
+    metalness 0
+  }
+  wallHeight 0.2
+}
+Robot {
+  translation 0 0 0.5280000000000004
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.1 0.1 0.12
+        roughness 0.5
+        metalness 0.6
+      }
+      geometry Box {
+        size 0.32 0.32 0.05
+      }
+    }
+    Pose {
+      translation 0.18 0.18 0.03
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.85 0.75 0.15
+            roughness 0.4
+          }
+          geometry Cylinder {
+            height 0.02
+            radius 0.08
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.18 0.18 0.03
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.85 0.75 0.15
+            roughness 0.4
+          }
+          geometry Cylinder {
+            height 0.02
+            radius 0.08
+          }
+        }
+      ]
+    }
+    Pose {
+      translation 0.18 -0.18 0.03
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.85 0.75 0.15
+            roughness 0.4
+          }
+          geometry Cylinder {
+            height 0.02
+            radius 0.08
+          }
+        }
+      ]
+    }
+    Pose {
+      translation -0.18 -0.18 0.03
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.85 0.75 0.15
+            roughness 0.4
+          }
+          geometry Cylinder {
+            height 0.02
+            radius 0.08
+          }
+        }
+      ]
+    }
+  ]
+  name "agent"
+  controller "tsp_controller"
+  supervisor TRUE
+}
+DEF WP0 Solid {
+  translation 3.3 5.3 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+      }
+      geometry Sphere {
+        radius 0.15
+      }
+    }
+  ]
+  name "wp0"
+}
+DEF WP1 Solid {
+  translation -1.2 1.3 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+      }
+      geometry Sphere {
+        radius 0.15
+      }
+    }
+  ]
+  name "wp1"
+}
+DEF WP2 Solid {
+  translation -3.7 2.4 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+      }
+      geometry Sphere {
+        radius 0.15
+      }
+    }
+  ]
+  name "wp2"
+}
+DEF WP3 Solid {
+  translation 2.7 -1.1 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+      }
+      geometry Sphere {
+        radius 0.15
+      }
+    }
+  ]
+  name "wp3"
+}
+DEF WP4 Solid {
+  translation 0 3.7 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+      }
+      geometry Sphere {
+        radius 0.15
+      }
+    }
+  ]
+  name "wp4"
+}
+DEF WP5 Solid {
+  translation 0 -3.7 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+      }
+      geometry Sphere {
+        radius 0.15
+      }
+    }
+  ]
+  name "wp5"
+}
+DEF WP6 Solid {
+  translation 3.7 0 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+      }
+      geometry Sphere {
+        radius 0.15
+      }
+    }
+  ]
+  name "wp6"
+}
+DEF WP7 Solid {
+  translation -3.7 0 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+      }
+      geometry Sphere {
+        radius 0.15
+      }
+    }
+  ]
+  name "wp7"
+}
+DEF WP8 Solid {
+  translation -4.7 -6 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+      }
+      geometry Sphere {
+        radius 0.15
+      }
+    }
+  ]
+  name "wp8"
+}
+DEF WP9 Solid {
+  translation 6.9 -6.9 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+      }
+      geometry Sphere {
+        radius 0.15
+      }
+    }
+  ]
+  name "wp9"
+}
+DEF WP10 Solid {
+  translation -3.7 6 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+      }
+      geometry Sphere {
+        radius 0.15
+      }
+    }
+  ]
+  name "wp10"
+}
+DEF OBS0 Solid {
+  translation -6.54 1.47 0.75
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 1.5
+        radius 0.07
+      }
+    }
+  ]
+  name "obs0"
+}
+DEF OBS1 Solid {
+  translation -6.11 6.15 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        radius 0.25
+      }
+    }
+  ]
+  name "obs1"
+}
+DEF OBS2 Solid {
+  translation -4.78 -2.2 1.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 2.1
+        radius 0.5
+      }
+    }
+  ]
+  name "obs2"
+}
+DEF OBS3 Solid {
+  translation -5.09 5.06 1.35
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 2.7
+        radius 0.25
+      }
+    }
+  ]
+  name "obs3"
+}
+DEF OBS4 Solid {
+  translation -2.5 4.82 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 2.4000000000000004 0.6000000000000005 2
+      }
+    }
+  ]
+  name "obs4"
+}
+DEF OBS5 Solid {
+  translation -3.2 -3.2 1.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.5 0.5 3
+      }
+    }
+  ]
+  name "obs5"
+}
+DEF OBS6 Solid {
+  translation 1.6 -3.2 1.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 2.5
+        radius 0.25
+      }
+    }
+  ]
+  name "obs6"
+}
+DEF OBS7 Solid {
+  translation -4.43 7.19 1.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 3
+        radius 0.25
+      }
+    }
+  ]
+  name "obs7"
+}
+DEF OBS8 Solid {
+  translation -7.08 -1.04 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 1
+        radius 0.07
+      }
+    }
+  ]
+  name "obs8"
+}
+DEF OBS9 Solid {
+  translation -6.54 1.47 0.3
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 0.6
+        radius 0.07
+      }
+    }
+  ]
+  name "obs9"
+}
+DEF OBS10 Solid {
+  translation -6.11 6.15 1.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 2.5
+        radius 0.25
+      }
+    }
+  ]
+  name "obs10"
+}
+DEF OBS11 Solid {
+  translation -4.09 3.62 0.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.3999999999999999 0.3999999999999999 0.4
+      }
+    }
+  ]
+  name "obs11"
+}
+DEF OBS12 Solid {
+  translation -3.22 -5.465 2
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.5 2.55 4
+      }
+    }
+  ]
+  name "obs12"
+}
+DEF OBS13 Solid {
+  translation -4.78 -2.2 1.35
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 2.7
+        radius 0.5
+      }
+    }
+  ]
+  name "obs13"
+}
+DEF OBS14 Solid {
+  translation -5.09 5.06 1.35
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 2.7
+        radius 0.25
+      }
+    }
+  ]
+  name "obs14"
+}
+DEF OBS15 Solid {
+  translation 3.86 6.62 1.55
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 3.1
+        radius 0.25
+      }
+    }
+  ]
+  name "obs15"
+}
+DEF OBS16 Solid {
+  translation 4.53 0.73 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 1
+        radius 0.07
+      }
+    }
+  ]
+  name "obs16"
+}
+DEF OBS17 Solid {
+  translation -7.08 -1.04 0.8
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 1.6
+        radius 0.07
+      }
+    }
+  ]
+  name "obs17"
+}
+DEF OBS18 Solid {
+  translation -6.54 1.47 1.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 2.5
+        radius 0.07
+      }
+    }
+  ]
+  name "obs18"
+}
+DEF OBS19 Solid {
+  translation -6.11 6.15 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        radius 0.25
+      }
+    }
+  ]
+  name "obs19"
+}
+DEF OBS20 Solid {
+  translation -5.09 5.06 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        radius 0.25
+      }
+    }
+  ]
+  name "obs20"
+}
+DEF OBS21 Solid {
+  translation -2.56 7.14 1.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 3
+        radius 0.25
+      }
+    }
+  ]
+  name "obs21"
+}
+DEF OBS22 Solid {
+  translation 5.77 2.7 0.75
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 1.3999999999999995 0.6000000000000001 1.5
+      }
+    }
+  ]
+  name "obs22"
+}
+DEF OBS23 Solid {
+  translation 1.6 4.3 1.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.40000000000000013 0.40000000000000036 3
+      }
+    }
+  ]
+  name "obs23"
+}
+DEF OBS24 Solid {
+  translation 3.2 3.2 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        radius 0.25
+      }
+    }
+  ]
+  name "obs24"
+}
+DEF OBS25 Solid {
+  translation 0 2.77 0.65
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.4 0.40000000000000036 1.3
+      }
+    }
+  ]
+  name "obs25"
+}
+DEF OBS26 Solid {
+  translation -1.6 3.37 1.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.40000000000000013 0.3999999999999999 3
+      }
+    }
+  ]
+  name "obs26"
+}
+DEF OBS27 Solid {
+  translation -2.5 4.82 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 2.4000000000000004 0.6000000000000005 2
+      }
+    }
+  ]
+  name "obs27"
+}
+DEF OBS28 Solid {
+  translation -6.0600000000000005 3.15 0.55
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 1.3999999999999995 1.5 1.1
+      }
+    }
+  ]
+  name "obs28"
+}
+DEF OBS29 Solid {
+  translation -5.74 -0.07 0.75
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.40000000000000036 1.1 1.5
+      }
+    }
+  ]
+  name "obs29"
+}
+DEF OBS30 Solid {
+  translation 0.95 7.0600000000000005 1.75
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 4.1 0.7999999999999998 3.5
+      }
+    }
+  ]
+  name "obs30"
+}
+DEF OBS31 Solid {
+  translation 5.17 5.77 1.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.6999999999999993 1.7000000000000002 2.2
+      }
+    }
+  ]
+  name "obs31"
+}
+DEF OBS32 Solid {
+  translation -3.2 1.6 1.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.3999999999999999 0.40000000000000013 3
+      }
+    }
+  ]
+  name "obs32"
+}
+DEF OBS33 Solid {
+  translation -4.09 3.62 1.15
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.3999999999999999 0.3999999999999999 2.3
+      }
+    }
+  ]
+  name "obs33"
+}
+DEF OBS34 Solid {
+  translation 5.98 1.12 1.35
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 2.7
+        radius 0.2
+      }
+    }
+  ]
+  name "obs34"
+}
+DEF OBS35 Solid {
+  translation 0.05 -7.09 0.6
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.4 0.40000000000000036 1.2
+      }
+    }
+  ]
+  name "obs35"
+}
+DEF OBS36 Solid {
+  translation 1.6 -5.31 0.8
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 1.6
+        radius 0.2
+      }
+    }
+  ]
+  name "obs36"
+}
+DEF OBS37 Solid {
+  translation 3.54 1.79 0.8
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.40000000000000036 0.3999999999999999 1.6
+      }
+    }
+  ]
+  name "obs37"
+}
+DEF OBS38 Solid {
+  translation -6.4 -6.78 1.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 2.5
+        radius 0.22
+      }
+    }
+  ]
+  name "obs38"
+}
+DEF OBS39 Solid {
+  translation 4.96 -4.7 1.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 2.5
+        radius 0.22
+      }
+    }
+  ]
+  name "obs39"
+}
+DEF OBS40 Solid {
+  translation -3.2 -1.6 1.55
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.3999999999999999 0.40000000000000013 3.1
+      }
+    }
+  ]
+  name "obs40"
+}
+DEF OBS41 Solid {
+  translation 5.91 -6.2 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.40000000000000036 0.40000000000000036 2
+      }
+    }
+  ]
+  name "obs41"
+}
+DEF OBS42 Solid {
+  translation 4.46 -6.56 0.95
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 1.9
+        radius 0.22
+      }
+    }
+  ]
+  name "obs42"
+}
+DEF OBS43 Solid {
+  translation 1.6 -1.6 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.40000000000000013 0.40000000000000013 2
+      }
+    }
+  ]
+  name "obs43"
+}
+DEF OBS44 Solid {
+  translation 0.26 5.49 1.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 2.5
+        radius 0.2
+      }
+    }
+  ]
+  name "obs44"
+}
+DEF OBS45 Solid {
+  translation -3.2 -3.2 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.5 0.5 2
+      }
+    }
+  ]
+  name "obs45"
+}
+DEF OBS46 Solid {
+  translation -1.1 -4.26 0.45
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 0.9
+        radius 0.25
+      }
+    }
+  ]
+  name "obs46"
+}
+DEF OBS47 Solid {
+  translation 1.6 -3.2 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        radius 0.25
+      }
+    }
+  ]
+  name "obs47"
+}
+DEF OBS48 Solid {
+  translation 1.6 -6.82 1.75
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 3.5
+        radius 0.17
+      }
+    }
+  ]
+  name "obs48"
+}
+DEF OBS49 Solid {
+  translation 0.039999999999999994 -1.7799999999999998 0.75
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.5 0.4999999999999998 1.5
+      }
+    }
+  ]
+  name "obs49"
+}
+DEF OBS50 Solid {
+  translation -0.305 -5.65 1.75
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 2.25 0.5 3.5
+      }
+    }
+  ]
+  name "obs50"
+}
+DEF OBS51 Solid {
+  translation 3.2 -5.465 1.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.5 2.55 2.2
+      }
+    }
+  ]
+  name "obs51"
+}
+DEF OBS52 Solid {
+  translation -3.22 -5.465 1.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.5 2.55 2.2
+      }
+    }
+  ]
+  name "obs52"
+}
+DEF OBS53 Solid {
+  translation 1.7650000000000001 1.0099999999999998 1.15
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.9500000000000002 2.5 2.3
+      }
+    }
+  ]
+  name "obs53"
+}
+DEF OBS54 Solid {
+  translation -4.78 -2.2 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        radius 0.5
+      }
+    }
+  ]
+  name "obs54"
+}
+DEF OBS55 Solid {
+  translation -5.84 -4.87 0.6
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 1.2
+        radius 0.9
+      }
+    }
+  ]
+  name "obs55"
+}
+DEF OBS56 Solid {
+  translation -6.54 -2.66 0.8
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 1.6
+        radius 0.07
+      }
+    }
+  ]
+  name "obs56"
+}
+DEF OBS57 Solid {
+  translation 4.53 0.73 0.95
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        height 1.9
+        radius 0.07
+      }
+    }
+  ]
+  name "obs57"
+}
+DEF OBS58 Solid {
+  translation -7.08 -1.04 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        radius 0.07
+      }
+    }
+  ]
+  name "obs58"
+}
+DEF OBS59 Solid {
+  translation -6.54 1.47 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.3 0.18
+        roughness 0.85
+      }
+      geometry Cylinder {
+        radius 0.07
+      }
+    }
+  ]
+  name "obs59"
+}
+DEF OBS60 Solid {
+  translation 6.585 -2.5999999999999996 0.45
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.9499999999999993 4.5 0.9
+      }
+    }
+  ]
+  name "obs60"
+}
+DEF OBS61 Solid {
+  translation 4.275 -2.1 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 1.9500000000000002 1.5 1
+      }
+    }
+  ]
+  name "obs61"
+}
+DEF OBS62 Solid {
+  translation -1.505 -1.33 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.4 0.25
+        roughness 0.8
+      }
+      geometry Box {
+        size 0.95 3.5 2
+      }
+    }
+  ]
+  name "obs62"
+}
