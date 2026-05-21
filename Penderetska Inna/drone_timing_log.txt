@@ -1,0 +1,12 @@
+Таймінги кадру (мс). Надішли цей файл у чат — запису екрана не потрібно.
+кадрів: 552
+CUDA: True device=cuda:0
+imgsz=160 infer_max_side=320 track=False
+
+read_ms: mean=11.47 p95=13.20 max=56.13
+scale_ms: mean=5.21 p95=5.84 max=9.06
+infer_ms: mean=37.02 p95=31.92 max=3384.21
+compose_ms: mean=2.82 p95=3.09 max=18.29
+imshow_wait_ms: mean=2.03 p95=2.24 max=98.66
+sleep_ms: mean=0.00 p95=0.00 max=0.00
+total_ms: mean=58.57 p95=55.48 max=3552.99

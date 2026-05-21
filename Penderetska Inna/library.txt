@@ -1,0 +1,14 @@
+# Бібліотеки проекту
+
+
+ ultralytics - `from ultralytics import YOLO` 
+ torch - `import torch` 
+ torchvision  -
+ opencv-python - `import cv2` 
+ numpy - `import numpy` 
+ matplotlib - `import matplotlib` 
+ pillow 
+ pyyaml 
+ pandas 
+ scipy 
+ tqdm 
