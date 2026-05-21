@@ -1,0 +1,7 @@
+﻿*.mp4
+*.cache
+test/
+*.pt
+weights/
+runs/
+results/events.out.tfevents*
